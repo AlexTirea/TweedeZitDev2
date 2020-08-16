@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOTIFY REVIEW</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-storage.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="mainTitle">SPOTIFY REVIEW</h1>
+    </header>
+    <main>
+        <h1 class="songTitle">Recently played songs</h1>
+        <form class="songsForm" id="form">
+            <label>
+
+                <select id="select">
+                    <option value="HCG">HCG ~ Josylvio</option>
+                    <option value="Sevn">Heartbroken ~ Sevn Alias</option>
+                    <option value="Boef">Til 'Em Op ~ Boef</option>
+                    <option value="Kevin">Gordelweg ~ Kevin</option>
+                </select>
+            </label>
+
+            <div id="diffSongsForm">
+            </div>
+            <div id="results"></div>
+        </form>
+
+        <h2 class="reviews">Reviews</h2>
+        <section class="formReviewer">
+            <form id="reviews">
+                <labe class="reviewtitles">
+                    Review the chosen song
+                    <input class="reviewtitles" type="text" name="songName" id="songName" />
+                    </label>
+                    <label class="reviewtitles">
+                        Describe it more detailed
+                        <textarea name="typedtext" id="typedtext"></textarea>
+                    </label>
+                    <label class="reviewtitles">
+                        Leave your playlist behind
+                        <textarea name="writer" id="writer"></textarea>
+                    </label>
+                    <button type="submit">
+                        Send
+                    </button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
